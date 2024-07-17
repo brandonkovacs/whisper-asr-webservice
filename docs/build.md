@@ -10,7 +10,7 @@ Install torch with following command:
 
 ```sh
 # just for GPU:
-pip3 install torch==1.13.0+cu117 -f https://download.pytorch.org/whl/torch
+pip3 install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch
 ```
 
 ### Run
@@ -77,4 +77,3 @@ poetry run gunicorn --bind 0.0.0.0:9000 --workers 1 --timeout 0 app.webservice:a
         ```sh
         docker-compose up --build -f docker-compose.gpu.yml
         ```
-
